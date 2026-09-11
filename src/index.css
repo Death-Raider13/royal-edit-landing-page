@@ -24,3 +24,43 @@
     --radius: 0.5rem;
   }
 }
+
+:root {
+  color-scheme: dark;
+  --gold: #C9A84C;
+  --gold-soft: #f2e7cc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #050505;
+  color: #E8E0D0;
+  font-family: Inter, "Avenir Next", "Segoe UI", Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent);
+  opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 999px;
+}
