@@ -81,11 +81,11 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-[#050505] text-[#E8E0D0] font-sans overflow-x-hidden selection:bg-[#C9A84C] selection:text-black">
-      
+
       {/* --- NAVIGATION --- */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? "bg-black/70 backdrop-blur-xl border-b border-white/5 py-4" : "bg-transparent py-6"}`}>
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -96,8 +96,8 @@ export default function LandingPage() {
             </div>
             <span className="font-serif text-xl md:text-2xl font-bold tracking-widest uppercase bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 group-hover:to-[#C9A84C] transition-all duration-500">Royal Edit</span>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -137,11 +137,11 @@ export default function LandingPage() {
       <section id="home" className="relative min-h-screen pt-32 pb-20 px-6 flex flex-col items-center justify-center text-center overflow-hidden">
         {/* Cinematic Background */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#C9A84C]/10 via-[#050505] to-[#050505] -z-10" />
-        <motion.div 
-          style={{ y }} 
-          className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#C9A84C]/10 rounded-full blur-[150px] -z-10 pointer-events-none opacity-50" 
+        <motion.div
+          style={{ y }}
+          className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#C9A84C]/10 rounded-full blur-[150px] -z-10 pointer-events-none opacity-50"
         />
-        
+
         <motion.div
           initial="hidden"
           animate="visible"
@@ -157,18 +157,18 @@ export default function LandingPage() {
           </motion.div>
 
           <motion.h1 variants={fadeUpBlur} className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.05] tracking-tight">
-            We Build Brands <br/>
+            We Build Brands <br />
             <span className="relative">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#C9A84C] via-[#F2E3C6] to-[#C9A84C] bg-[length:200%_auto] animate-gradient">
                 That Get Seen.
               </span>
             </span>
           </motion.h1>
-          
+
           <motion.p variants={fadeUpBlur} className="text-lg md:text-xl text-gray-400 max-w-2xl mb-12 leading-relaxed font-medium">
             Creative media, branding, and digital solutions designed to help visionary businesses, creators, and organizations dominate their market.
           </motion.p>
-          
+
           <motion.div variants={fadeUpBlur} className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
             <a href="/contact" className="inline-flex items-center justify-center bg-[#C9A84C] text-black hover:bg-white font-bold px-10 h-14 rounded-full text-base transition-all duration-500 hover:scale-105 w-full sm:w-auto shadow-[0_0_20px_rgba(201,168,76,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] group">
               Start Your Project <ArrowUpRight className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -188,7 +188,7 @@ export default function LandingPage() {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -201,7 +201,7 @@ export default function LandingPage() {
 
       {/* --- 2. ABOUT --- */}
       <section id="about" className="py-32 px-6 bg-[#0a0a0a] relative border-y border-white/5">
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -209,11 +209,11 @@ export default function LandingPage() {
           className="container mx-auto max-w-5xl text-center relative z-10"
         >
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-10 tracking-tight leading-tight">
-            More Than Media. <br className="hidden md:block"/>
+            More Than Media. <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A84C] to-[#8B6F2E] italic">We Build Presence.</span>
           </h2>
           <p className="text-xl md:text-3xl text-gray-400 leading-relaxed font-light max-w-4xl mx-auto">
-            Royal Edit Media House is a premier creative agency. We solve the problem of digital invisibility by equipping ambitious brands with high-impact visuals and strategic digital presence. 
+            Royal Edit Media House is a premier creative agency. We solve the problem of digital invisibility by equipping ambitious brands with high-impact visuals and strategic digital presence.
             <span className="text-white font-medium"> Our vision is to ensure that every brand with something to say is heard and remembered.</span>
           </p>
         </motion.div>
@@ -222,7 +222,7 @@ export default function LandingPage() {
       {/* --- 3. SERVICES --- */}
       <section id="services" className="py-32 px-6 relative">
         <div className="container mx-auto max-w-7xl">
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -237,8 +237,8 @@ export default function LandingPage() {
               <h2 className="font-serif text-4xl md:text-6xl font-bold tracking-tight">Services that elevate your brand.</h2>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -350,9 +350,9 @@ export default function LandingPage() {
       <section id="work" className="py-32 px-6 bg-[#0a0a0a] border-y border-white/5 relative overflow-hidden">
         {/* Background Accent */}
         <div className="absolute -right-40 -top-40 w-[600px] h-[600px] bg-[#C9A84C]/5 rounded-full blur-[120px] pointer-events-none" />
-        
+
         <div className="container mx-auto max-w-7xl relative z-10">
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -371,7 +371,7 @@ export default function LandingPage() {
             </Button>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -383,7 +383,7 @@ export default function LandingPage() {
                 <div className="overflow-hidden rounded-[2rem] bg-[#111] relative border border-white/5 aspect-[4/5] md:aspect-square">
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-500 z-10" />
                   <img src={img} alt={`Brand flyer ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  
+
                   {/* Overlay Content */}
                   <div className="absolute inset-0 z-20 flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-t from-black/90 via-black/30 to-transparent">
                     <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -449,18 +449,18 @@ export default function LandingPage() {
       {/* --- 5. WHO WE WORK WITH --- */}
       <section className="py-32 px-6 bg-[#C9A84C] text-black">
         <div className="container mx-auto max-w-6xl">
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
             className="text-center mb-24"
           >
-            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight leading-tight">Built For People With <br/>Something To Say.</h2>
+            <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight leading-tight">Built For People With <br />Something To Say.</h2>
             <p className="text-xl md:text-2xl font-medium opacity-80 max-w-3xl mx-auto">We partner with visionary leaders across all industries to elevate their message and maximize their impact.</p>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -468,15 +468,15 @@ export default function LandingPage() {
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
           >
             {[
-              { icon: <Building size={32}/>, label: "Businesses" },
-              { icon: <Lightbulb size={32}/>, label: "Entrepreneurs" },
-              { icon: <Sparkles size={32}/>, label: "Creators" },
-              { icon: <MonitorSmartphone size={32}/>, label: "Organizations" },
-              { icon: <User size={32}/>, label: "Personal Brands" },
-              { icon: <GraduationCap size={32}/>, label: "Campus" },
+              { icon: <Building size={32} />, label: "Businesses" },
+              { icon: <Lightbulb size={32} />, label: "Entrepreneurs" },
+              { icon: <Sparkles size={32} />, label: "Creators" },
+              { icon: <MonitorSmartphone size={32} />, label: "Organizations" },
+              { icon: <User size={32} />, label: "Personal Brands" },
+              { icon: <GraduationCap size={32} />, label: "Campus" },
             ].map((target, i) => (
-              <motion.div 
-                key={i} 
+              <motion.div
+                key={i}
                 variants={scaleUp}
                 className="flex flex-col items-center gap-5 p-8 rounded-[2rem] bg-black/5 hover:bg-black hover:text-white hover:-translate-y-2 transition-all duration-300 text-center group"
               >
@@ -587,7 +587,7 @@ export default function LandingPage() {
       {/* --- 7. CTA --- */}
       <section className="py-40 px-6 text-center relative overflow-hidden bg-[#111] border-t border-white/5">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#C9A84C]/5" />
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -598,10 +598,10 @@ export default function LandingPage() {
             <Star className="w-8 h-8 text-[#C9A84C] fill-[#C9A84C]" />
           </div>
           <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-8 text-white tracking-tight leading-[1.1]">
-            Ready To Build <br/><span className="text-[#C9A84C]">Your Brand?</span>
+            Ready To Build <br /><span className="text-[#C9A84C]">Your Brand?</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 mb-16 font-medium max-w-2xl mx-auto">Let's create something people will remember. Book a free consultation with our creative directors today.</p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button size="lg" className="bg-[#C9A84C] text-black hover:bg-white font-bold px-12 h-16 rounded-full text-lg shadow-[0_0_30px_rgba(201,168,76,0.3)] hover:-translate-y-1 transition-all duration-300">
               Start A Project
@@ -645,7 +645,7 @@ export default function LandingPage() {
               <img src={logo} alt="Royal Edit logo" className="w-12 h-12 object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-500" />
               <span className="font-serif font-bold tracking-[0.2em] uppercase text-xl">Royal Edit</span>
             </div>
-            
+
             <div className="flex flex-wrap justify-center gap-10 text-sm text-gray-400 font-bold tracking-[0.1em] uppercase">
               {[
                 { label: 'Home', href: '#home' },
@@ -664,7 +664,7 @@ export default function LandingPage() {
               ))}
             </div>
           </div>
-          
+
           <div className="pt-10 border-t border-white/5 text-center text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center gap-4 font-medium">
             <p>© {new Date().getFullYear()} Royal Edit Media House. All Rights Reserved.</p>
             <div className="flex gap-8">
