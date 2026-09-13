@@ -18,6 +18,8 @@ import {
   Star,
   ArrowUpRight,
   Play,
+  Code,
+  Bot,
   X,
   MessageCircle,
   Quote,
@@ -243,13 +245,15 @@ export default function LandingPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
             variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {[
               { icon: <Video size={32} />, title: "Video Editing", items: ["Social media videos", "Promotional videos", "Documentary edits"] },
               { icon: <PenTool size={32} />, title: "Graphic Design", items: ["Event Flyers", "Brand visuals", "Social media designs"] },
               { icon: <Share2 size={32} />, title: "Social Media", items: ["Content planning", "Page management", "Growth strategy"] },
               { icon: <Megaphone size={32} />, title: "Advertising", items: ["Business advertising", "Campaign content", "Promo strategies"] },
+              { icon: <Code size={32} />, title: "Web Development", items: ["Corporate websites", "Landing pages", "E-commerce stores"] },
+              { icon: <Bot size={32} />, title: "Automation", items: ["Workflow automation", "AI integration", "Chatbots & Systems"] },
             ].map((service, i) => (
               <motion.div key={i} variants={fadeUpBlur}>
                 <Card className="bg-white/[0.02] border-white/5 hover:bg-[#111] hover:border-[#C9A84C]/30 transition-all duration-500 rounded-3xl h-full group overflow-hidden relative">

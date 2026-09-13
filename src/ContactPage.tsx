@@ -108,15 +108,17 @@ export default function ContactPage() {
                                             <option className="text-black">Graphic Design</option>
                                             <option className="text-black">Social Media</option>
                                             <option className="text-black">Advertising</option>
+                                            <option className="text-black">Web Development</option>
+                                            <option className="text-black">Automation</option>
                                         </select>
                                     </label>
                                     <label className="block">
                                         <span className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 block mb-2">Budget Range</span>
                                         <select name="budget" value={contactForm.budget} onChange={handleContactChange} className="w-full bg-white/[0.03] border border-white/15 rounded-2xl px-4 py-3 text-white focus:outline-none focus:border-[#C9A84C]">
-                                            <option className="text-black">Below $250</option>
-                                            <option className="text-black">$250 - $500</option>
-                                            <option className="text-black">$500 - $1000</option>
-                                            <option className="text-black">$1000+</option>
+                                            <option className="text-black">Below ₦250k</option>
+                                            <option className="text-black">₦250k - ₦500k</option>
+                                            <option className="text-black">₦500k - ₦1M</option>
+                                            <option className="text-black">₦1M+</option>
                                         </select>
                                     </label>
                                 </div>
